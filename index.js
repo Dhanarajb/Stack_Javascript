@@ -1,4 +1,5 @@
 import { createStack } from "./ImplementTask.js";
+import { evaluatePostfix } from "./postfix.js";
 import { reverseString } from "./reverseString.js";
 import { isBalanced } from "./validParensis.js";
 
@@ -22,3 +23,8 @@ console.log(isBalanced("()[]{}")); // Output: true
 console.log(isBalanced("(]")); // Output: false
 console.log(isBalanced("([)]")); // Output: false
 console.log(isBalanced("{[]}"));
+console.log("--------------------------------------------------------------");
+// ---------------Postfix--------------------
+const postfixExpression = "5 3 + 8 * 4 /";
+const result = evaluatePostfix(postfixExpression);
+console.log("Result:", result);
