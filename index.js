@@ -1,5 +1,6 @@
 import { createStack } from "./ImplementTask.js";
 import { reverseString } from "./reverseString.js";
+import { isBalanced } from "./validParensis.js";
 
 // ---------------implement stack------------------
 const stack = createStack();
@@ -14,3 +15,10 @@ console.log("--------------------------------------------------------------");
 const inputString = "hello";
 const reversedString = reverseString(inputString);
 console.log(reversedString);
+console.log("--------------------------------------------------------------");
+// ---------------valid parenthesis--------------------
+console.log(isBalanced("()")); // Output: true
+console.log(isBalanced("()[]{}")); // Output: true
+console.log(isBalanced("(]")); // Output: false
+console.log(isBalanced("([)]")); // Output: false
+console.log(isBalanced("{[]}"));
