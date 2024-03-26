@@ -1,4 +1,5 @@
 import { createStack } from "./ImplementTask.js";
+import { MaxStack } from "./maxStack.js";
 import { MinStack } from "./minstack.js";
 import { evaluatePostfix } from "./postfix.js";
 import { reverseString } from "./reverseString.js";
@@ -42,3 +43,13 @@ console.log(minStack.getMin());
 minStack.pop();
 console.log(minStack.top());
 console.log(minStack.getMin());
+console.log("--------------------------------------------------------------");
+// ---------------Min stack--------------------
+const maxStack = MaxStack();
+maxStack.push(5);
+maxStack.push(3);
+maxStack.push(8);
+console.log(maxStack.getMax());
+maxStack.pop();
+console.log(maxStack.top());
+console.log(maxStack.getMax());
